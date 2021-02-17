@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="margin-top: 30px;" class="text-center">Cats and Dogs Classifier</h1>
+    <br>
+    <p class="text-center">Upload Image of Cat or Dog</p>
+    <div class="container">
+        <div class="row justify-content-md-center">
+            <img src="https://placehold.it/80x80" width="300px" id="preview" class="img-thumbnail">
+        </div>
+        <div class="row justify-content-md-center">
+            <div class="ml-2 col-sm-6">
+                <div id="msg"></div>
+                    <form method="post" id="image-form">
+                        <input type="file" name="file" class="file" accept="image/*">
+                        <div class="input-group my-3">
+                            <input type="text" class="form-control" disabled placeholder="Upload File" id="file">
+                            <div class="input-group-append">
+                            <button type="button" class="browse btn btn-primary">Browse...</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <br>
+        <div class="row justify-content-md-center">
+            <h4 id="result"></h4>
+        </div>
+    </div>
+    <br>
+    <br>
+    <h6 class="text-center">Created by Dwi Gustin Nurdialit</h6>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+</html>
